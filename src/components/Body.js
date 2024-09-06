@@ -4,6 +4,7 @@ import { collection, getDocs } from "firebase/firestore";
 import { Link } from "react-router-dom";
 import Shimmer from "./Shimmer";
 import { RecipeCard } from "./RecipeCard";
+import StatisticsPage from "./StatisticsPage";
 
 const RecipesBody = () => {
   const [recipes, setRecipes] = useState([]);
@@ -69,6 +70,9 @@ const RecipesBody = () => {
           <Shimmer />
         )}
       </div>
+
+      {/* Statistics Page */}
+      <StatisticsPage />
     </div>
   );
 };
